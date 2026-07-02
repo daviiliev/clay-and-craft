@@ -36,7 +36,7 @@ A premium e-commerce product page for a handmade ceramics brand. Built with **Va
 
 ## 🚀 Live Demo
 
-**[View Live Demo](https://dein-name.github.io/clay-and-craft/)**
+**[View Live Demo]( https://daviiliev.github.io/clay-and-craft/)**
 
 ---
 
