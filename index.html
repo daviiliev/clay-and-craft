@@ -1067,4 +1067,138 @@
         <div class="container">
             <div class="cta-box">
                 <h2>Find Your Perfect Mug 🏺</h2>
-                <p>Join thousands of happy customers who love our handmade ceramics.</
+                <p>Join thousands of happy customers who love our handmade ceramics.</p>
+                <a href="#" class="btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Shop Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Clay<span>& Craft</span></div>
+                    <p>Handmade ceramics for a mindful life.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Shop</h4>
+                        <a href="#">Mugs</a>
+                        <a href="#">Bowls</a>
+                        <a href="#">Plates</a>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Clay & Craft. All rights reserved.</span>
+                <div>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const toggleBtn = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            const icon = toggleBtn.querySelector('i');
+            icon.className = navLinks.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                toggleBtn.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+
+        // Navbar Shadow
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Color Selection
+        const colorOptions = document.querySelectorAll('.color-option');
+        const selectedColor = document.getElementById('selectedColor');
+
+        colorOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                colorOptions.forEach(o => o.classList.remove('active'));
+                option.classList.add('active');
+                selectedColor.textContent = option.dataset.color;
+            });
+        });
+
+        // Quantity
+        let quantity = 1;
+        const quantityDisplay = document.getElementById('quantity');
+        const decreaseBtn = document.getElementById('decrease');
+        const increaseBtn = document.getElementById('increase');
+
+        decreaseBtn.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                quantityDisplay.textContent = quantity;
+            }
+        });
+
+        increaseBtn.addEventListener('click', () => {
+            quantity++;
+            quantityDisplay.textContent = quantity;
+        });
+
+        // Add to Cart
+        const addToCartBtn = document.getElementById('addToCart');
+        const cartBadge = document.querySelector('.badge');
+        let cartCount = 0;
+
+        addToCartBtn.addEventListener('click', () => {
+            cartCount += quantity;
+            cartBadge.textContent = cartCount;
+            addToCartBtn.innerHTML = '<i class="fas fa-check"></i> Added!';
+            addToCartBtn.style.background = '#b86a2f';
+
+            setTimeout(() => {
+                addToCartBtn.innerHTML = '<i class="fas fa-shopping-bag"></i> Add to Cart';
+                addToCartBtn.style.background = '#d4813e';
+            }, 2000);
+        });
+
+        // Thumbnails
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.main-image img');
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                thumbnails.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                mainImage.src = thumb.querySelector('img').src;
+            });
+        });
+
+        console.log('%c🏺 Clay & Craft', 'font-size: 24px; font-weight: bold; color: #d4813e;');
+        console.log('%cHandmade Ceramics E-Commerce · Vanilla JS', 'font-size: 14px; color: #7a5f4b;');
+    </script>
+</body>
+</html>
