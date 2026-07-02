@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clay & Craft – Handmade Ceramics</title>
 
-    <!-- SCHRIFTART: Playfair Display (elegant, serifenbetont) + Nunito (rund, weich) -->
+    <!-- SCHRIFTARTEN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
-        /* ---------- RESET & BASE ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -49,7 +48,6 @@
             padding: 0 24px;
         }
 
-        /* ---------- ANIMATED BACKGROUND ---------- */
         .bg-glow {
             position: fixed;
             top: -30%;
@@ -83,7 +81,6 @@
             }
         }
 
-        /* ---------- TYPOGRAPHY ---------- */
         .serif {
             font-family: 'Playfair Display', serif;
         }
@@ -201,7 +198,6 @@
             align-items: start;
         }
 
-        /* ----- GALLERY ----- */
         .gallery {
             position: sticky;
             top: 100px;
@@ -261,7 +257,6 @@
             box-shadow: 0 0 0 2px var(--accent-glow);
         }
 
-        /* ----- PRODUCT INFO ----- */
         .product-info .badge {
             display: inline-block;
             background: var(--secondary);
@@ -332,7 +327,6 @@
             font-size: 1rem;
         }
 
-        /* ----- COLORS ----- */
         .color-selector {
             margin-bottom: 24px;
         }
@@ -380,7 +374,6 @@
             background: #b5c4b1;
         }
 
-        /* ----- CART ----- */
         .cart-controls {
             display: flex;
             gap: 16px;
@@ -443,7 +436,6 @@
             transform: scale(0.96);
         }
 
-        /* ----- FEATURES ----- */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -785,20 +777,16 @@
             .product-wrapper {
                 grid-template-columns: 1fr;
             }
-
             .gallery {
                 position: relative;
                 top: 0;
             }
-
             .product-info h1 {
                 font-size: 2.2rem;
             }
-
             .features-grid {
                 grid-template-columns: 1fr 1fr;
             }
-
             .why-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -818,60 +806,46 @@
                 border-radius: 0 0 28px 28px;
                 box-shadow: 0 24px 40px rgba(0, 0, 0, 0.04);
             }
-
             .nav-links.open {
                 display: flex;
             }
-
             .menu-toggle {
                 display: block;
             }
-
             .product-info h1 {
                 font-size: 1.8rem;
             }
-
             .cart-controls {
                 flex-direction: column;
             }
-
             .btn-add {
                 width: 100%;
             }
-
             .features-grid {
                 grid-template-columns: 1fr;
             }
-
             .why-grid {
                 grid-template-columns: 1fr;
             }
-
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
-
             .footer-links {
                 grid-template-columns: repeat(2, 1fr);
             }
-
             .cta-box {
                 padding: 30px 20px;
             }
-
             .cta-box h2 {
                 font-size: 1.8rem;
             }
-
             .newsletter-box {
                 padding: 30px 20px;
             }
-
             .newsletter-box .input-group {
                 flex-direction: column;
             }
-
             .newsletter-box button {
                 width: 100%;
             }
@@ -882,11 +856,9 @@
                 grid-template-columns: repeat(4, 1fr);
                 gap: 8px;
             }
-
             .footer-links {
                 grid-template-columns: 1fr;
             }
-
             .footer-bottom {
                 flex-direction: column;
                 gap: 8px;
@@ -897,11 +869,11 @@
 </head>
 <body>
 
-    <!-- ========== BACKGROUND GLOW ========== -->
+    <!-- BACKGROUND GLOW -->
     <div class="bg-glow"></div>
     <div class="bg-glow-2"></div>
 
-    <!-- ========== NAV ========== -->
+    <!-- NAV -->
     <nav id="navbar">
         <div class="container nav-wrapper">
             <div class="logo">Clay<span>& Craft</span></div>
@@ -919,7 +891,7 @@
         </div>
     </nav>
 
-    <!-- ========== PRODUCT ========== -->
+    <!-- PRODUCT -->
     <section class="product">
         <div class="container">
             <div class="product-wrapper">
@@ -1009,7 +981,7 @@
         </div>
     </section>
 
-    <!-- ========== WHY US ========== -->
+    <!-- WHY US -->
     <section class="why-us">
         <div class="container">
             <h2 class="section-title">Why Clay & Craft?</h2>
@@ -1039,12 +1011,11 @@
         </div>
     </section>
 
-    <!-- ========== REVIEWS ========== -->
+    <!-- REVIEWS -->
     <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="section-title">⭐ What Our Customers Say</h2>
             <p class="section-sub">Real reviews from real ceramic lovers.</p>
-
             <div class="review-grid">
                 <div class="review-card">
                     <div class="stars">
@@ -1052,10 +1023,9 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Absolutely beautiful! The texture and color are even better in person. My new favorite mug."</p>
+                    <p>"Absolutely beautiful! The texture and color are even better in person."</p>
                     <div class="author">Sophie M. <span>– Verified Buyer</span></div>
                 </div>
-
                 <div class="review-card">
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1065,7 +1035,6 @@
                     <p>"I love that each piece is unique. It feels special to own something handmade."</p>
                     <div class="author">James K. <span>– Verified Buyer</span></div>
                 </div>
-
                 <div class="review-card">
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1079,7 +1048,7 @@
         </div>
     </section>
 
-    <!-- ========== NEWSLETTER ========== -->
+    <!-- NEWSLETTER -->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-box">
@@ -1093,144 +1062,9 @@
         </div>
     </section>
 
-    <!-- ========== CTA ========== -->
+    <!-- CTA -->
     <section class="cta" id="cta">
         <div class="container">
             <div class="cta-box">
                 <h2>Find Your Perfect Mug 🏺</h2>
-                <p>Join thousands of happy customers who love our handmade ceramics.</p>
-                <a href="#" class="btn-primary">
-                    <i class="fas fa-shopping-bag"></i> Shop Now
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">Clay<span>& Craft</span></div>
-                    <p>Handmade ceramics for a mindful life.</p>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <h4>Shop</h4>
-                        <a href="#">Mugs</a>
-                        <a href="#">Bowls</a>
-                        <a href="#">Plates</a>
-                    </div>
-                    <div>
-                        <h4>Support</h4>
-                        <a href="#">Help Center</a>
-                        <a href="#">Returns</a>
-                        <a href="#">Contact</a>
-                    </div>
-                    <div>
-                        <h4>Company</h4>
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2026 Clay & Craft. All rights reserved.</span>
-                <div>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // ========== Mobile Menu ==========
-        const toggleBtn = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            const icon = toggleBtn.querySelector('i');
-            icon.className = navLinks.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                toggleBtn.querySelector('i').className = 'fas fa-bars';
-            });
-        });
-
-        // ========== Navbar Shadow ==========
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // ========== Color Selection ==========
-        const colorOptions = document.querySelectorAll('.color-option');
-        const selectedColor = document.getElementById('selectedColor');
-
-        colorOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                colorOptions.forEach(o => o.classList.remove('active'));
-                option.classList.add('active');
-                selectedColor.textContent = option.dataset.color;
-            });
-        });
-
-        // ========== Quantity ==========
-        let quantity = 1;
-        const quantityDisplay = document.getElementById('quantity');
-        const decreaseBtn = document.getElementById('decrease');
-        const increaseBtn = document.getElementById('increase');
-
-        decreaseBtn.addEventListener('click', () => {
-            if (quantity > 1) {
-                quantity--;
-                quantityDisplay.textContent = quantity;
-            }
-        });
-
-        increaseBtn.addEventListener('click', () => {
-            quantity++;
-            quantityDisplay.textContent = quantity;
-        });
-
-        // ========== Add to Cart ==========
-        const addToCartBtn = document.getElementById('addToCart');
-        const cartBadge = document.querySelector('.badge');
-        let cartCount = 0;
-
-        addToCartBtn.addEventListener('click', () => {
-            cartCount += quantity;
-            cartBadge.textContent = cartCount;
-            addToCartBtn.innerHTML = '<i class="fas fa-check"></i> Added!';
-            addToCartBtn.style.background = '#b86a2f';
-
-            setTimeout(() => {
-                addToCartBtn.innerHTML = '<i class="fas fa-shopping-bag"></i> Add to Cart';
-                addToCartBtn.style.background = '#d4813e';
-            }, 2000);
-        });
-
-        // ========== Thumbnails ==========
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        const mainImage = document.querySelector('.main-image img');
-
-        thumbnails.forEach(thumb => {
-            thumb.addEventListener('click', () => {
-                thumbnails.forEach(t => t.classList.remove('active'));
-                thumb.classList.add('active');
-                mainImage.src = thumb.querySelector('img').src;
-            });
-        });
-
-        console.log('%c🏺 Clay & Craft', 'font-size: 24px; font-weight: bold; color: #d4813e;');
-        console.log('%cSchriftart: Playfair Display (elegant) + Nunito (weich)', 'font-size: 14px; color: #7a5f4b;');
-        console.log('%cFarbpalette: Terracotta · Senfgelb · Creme', 'font-size: 14px; color: #7a5f4b;');
-    </script>
-</body>
-</html>
+                <p>Join thousands of happy customers who love our handmade ceramics.</
